@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0a0c10;
+  color: #e5e7eb;
+  /* Off-white for better readability */
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  /* Slander scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.neon-text-blue {
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+.glass-panel {
+  background: rgba(16, 16, 16, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Typewriter Animation */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.animate-typewriter {
+  animation: typewriter 3s steps(40) 1s 1 normal both;
+  display: inline-block;
+}
+
+/* Typewriter Animation - Loop */
+@keyframes typewriter-loop {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 100%;
+  }
+
+  65% {
+    width: 100%;
+  }
+
+  95% {
+    width: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.animate-typewriter-loop {
+  animation: typewriter-loop 6s steps(40) infinite;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}

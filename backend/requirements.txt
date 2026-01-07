@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+yfinance
+pydantic
+python-dotenv
+mistralai
+feedparser
+reportlab
+duckduckgo-search
+motor
+passlib[bcrypt]
+python-jose[cryptography]
+python-multipart
